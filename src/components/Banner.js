@@ -54,10 +54,10 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Divyank`}</h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap" id="rolling-text">{text}</span></span>
-                  <p>I'm a passionate front-end developer with a love for creating visually appealing and user-friendly web applications. Using HTML, CSS, JavaScript, and React Js, I bring ideas to life with clean code & modern design principles. Always eager to learn and improve.</p>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""} id="banner">
+                <div className="tagline">Welcome to my Portfolio</div>
+                <h1>Hi! I'm Divyank</h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap" id="rolling-text">{text}</span></span>
+                  <p className="banner-para">I'm a passionate front-end developer with a love for creating visually appealing and user-friendly web applications. Using HTML, CSS, JavaScript, and React Js, I bring ideas to life with clean code & modern design principles. Always eager to learn and improve.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

@@ -641,8 +641,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Footer */
 
 .footer {
-  padding: 0 0 3vw 0;
-  height: 20vh;
+  padding: 10vw 0 3vw 0;
+  height: 45vh;
   background: linear-gradient(40deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
 }
 
@@ -662,3 +662,95 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 } 
+
+@media (max-width: 600px) {
+  .navbar{
+    display: flex;
+    align-items: center;
+    translate: 0vw -1vw;
+  }
+
+  #nav{
+    height: 10vw;
+  }
+
+  .banner h1{
+    font-size: 10vw;
+  }
+
+  .banner .tagline{
+      padding: 1vw 2vw;
+      font-size: 4.5vw;
+    }
+
+  #rolling-text{
+    font-size: 6vw;
+  }
+
+  .banner p{
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  .banner button{
+    font-size: 3.5vw;
+  }
+
+  .banner img{
+    height: 50vw;
+    width: 50vw;
+    animation: scrollrightleft 3s linear infinite;
+    margin-top: 3vw;
+    margin-left: 20vw;
+  }
+
+  @keyframes scrollrightleft {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+  }
+
+  .skill{
+    padding-top: 35vw;
+  }
+
+  .project{
+    height: 60vh;
+  }
+
+  .project-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proj-imgbx{
+    height: 42.8vw;
+    width: 80%;
+    margin-bottom: 2vw;
+  }
+
+  .contact{
+    padding-top: 120vw;
+    padding-bottom: 135vw;
+  }
+
+  .footer p{
+    font-size: 2vw;
+  }
+
+  .footer .name{
+    display: none;
+  }
+
+  .footer{
+    padding-top: 3vw;
+  }
+
+}
