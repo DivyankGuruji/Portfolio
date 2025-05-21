@@ -70,13 +70,6 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
-}
-
 p.success {
 	color: green;
 }
@@ -88,7 +81,7 @@ p.danger {
 nav.navbar {
   position: fixed;
   width: 100%;
-  height: 7vw;
+  height: auto;
   top: 0;
   z-index: 1000;
   transition:  0.32s ease-in-out;
@@ -265,8 +258,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  height: 100vh;
-  padding: 25vh 0vh;
+  height: auto;
+  padding: 15vw 0vh 5vw 0vw;
   background: linear-gradient(75deg,rgb(14, 14, 14) 52%,rgb(95, 95, 95) );
 }
 
@@ -279,7 +272,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 900;
   letter-spacing: 0.075vw;
   padding: 0.7vw 1.5vw;
-  background: linear-gradient(90.21deg, rgba(69, 69, 69, 0.5) -5.91%,  rgba(41, 42, 120, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(128, 128, 128, 0.5) -5.91%,  rgba(0, 0, 0, 0.5) 111.58%);
   border: 0.1vw solid rgba(255, 255, 255, 0.5);
   font-size: 1.7vw;
   margin-bottom: 1vw;
@@ -353,7 +346,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  height: 100vh;
+  height: auto;
+  padding: 5vw 0vw 5vw 0vw;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -407,10 +401,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 8vw 0;
+  padding: 10vw 0vw 3vw 0vw;
   position: relative;
   background: linear-gradient(75deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
-  height: 100vh;
+  height: auto;
 }
 
 .project h2 {
@@ -495,7 +489,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 2.5vw;
   overflow: hidden;
-  height: 16vw;
+  height: auto;
+  margin-bottom: 0vw;
 }
 
 .proj-imgbx::before {
@@ -556,9 +551,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Contact */
 
 .contact {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(104deg, rgb(14, 14, 14) 53%, rgb(95, 95, 95) );
-  padding: 10vw 0vw 0vw 0vw;
+  padding: 10vw 0vw 5vw 0vw;
 }
 
 .contact img {
@@ -641,9 +636,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Footer */
 
 .footer {
-  padding: 10vw 0 3vw 0;
-  height: 45vh;
-  background: linear-gradient(40deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
+  padding: 3vw 0 3vw 0;
+  height: auto;
+  background: linear-gradient(50deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
 }
 
 .footer div{
@@ -657,10 +652,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .footer p {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.5vw;
   color: #ffffff;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  margin-top: 2vw;
 } 
 
 @media (max-width: 600px) {
@@ -671,7 +666,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   #nav{
-    height: 10vw;
+    height: 12vw;
+  }
+
+  .banner{
+    padding: 25vw 0vw;
+    height: 150vw;
+    background: linear-gradient(110deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
   }
 
   .banner h1{
@@ -681,14 +682,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner .tagline{
       padding: 1vw 2vw;
       font-size: 4.5vw;
+      padding-bottom: 1vw;
     }
 
   #rolling-text{
     font-size: 6vw;
+    padding-bottom: 1vw;
   }
 
   .banner p{
-    font-size: 3vw;
+    font-size: 3.3vw;
     line-height: 1.5;
   }
 
@@ -701,7 +704,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 50vw;
     animation: scrollrightleft 3s linear infinite;
     margin-top: 3vw;
-    margin-left: 20vw;
+    margin-left: 23vw;
   }
 
   @keyframes scrollrightleft {
@@ -717,11 +720,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .skill{
-    padding-top: 35vw;
+    display: block;
+    height: auto;
+    padding-top: 5vw;
+    padding-bottom: 8vw;
+    background: linear-gradient(56deg, rgb(14, 14, 14) 53%,rgb(95, 95, 95));
+  }
+
+  .skill-bx{
+    background-color: rgba(40, 40, 40, 0.574);
   }
 
   .project{
-    height: 60vh;
+    height: auto;
+     background: linear-gradient(107deg,rgb(14, 14, 14) 53%,rgb(95, 95, 95));
   }
 
   .project-column{
@@ -737,8 +749,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .contact{
-    padding-top: 120vw;
-    padding-bottom: 135vw;
+    /* padding-top: 120vw; */
+    padding-bottom: 2vw;
+    height: auto;
+    background: linear-gradient(70deg, rgb(14, 14, 14) 53%,rgb(95, 95, 95));
+  }
+
+  .contact h2{
+    font-size: 5vw;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  .contact form input{
+    width: 99.5%;
+    height: 8vw;
+    padding: 0vw 3vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+  }
+
+  .contact form button{
+    font-size: 3vw;
+    padding: 2.5vw 5vw;
+    margin: 2vw 0vw 0vw 3vw;
+  }
+
+  .contact form textarea{
+    font-size: 3vw;
+  }
+
+  .contact form input::placeholder, .contact form textarea::placeholder{
+    font-size: 2.5vw;
+  }
+
+  .form-button{
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+  }
+
+  .footer{
+    height: auto;
   }
 
   .footer p{
@@ -751,6 +804,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .footer{
     padding-top: 3vw;
+    background: linear-gradient(162.5deg, rgb(14, 14, 14) 53%,rgb(95, 95, 95));
   }
 
 }
