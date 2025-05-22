@@ -420,7 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 2vw;
   margin: 2vw auto 3vw auto;
   text-align: center;
-  width: 56%;
+  width: 65%;
 }
 
 .project .nav.nav-pills {
@@ -546,6 +546,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.sec-heading{
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+.sec-heading span{
+  font-size: 3.5vw;
+}
+
+.sec-description {
+  font-size: 1.4vw;
+}
+
+.sec-description ul li{
+  line-height: 2;
 }
 
 /* Contact */
